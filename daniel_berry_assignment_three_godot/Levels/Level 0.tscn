@@ -1,0 +1,271 @@
+[gd_scene load_steps=15 format=4 uid="uid://clistbmirlqoe"]
+
+[ext_resource type="Script" path="res://Scripts/level_0.gd" id="1_jkq4l"]
+[ext_resource type="Texture2D" uid="uid://va28ax843ipv" path="res://Assets/Mountains.png" id="1_tr7sb"]
+[ext_resource type="Texture2D" uid="uid://c0unc0jk5eyyq" path="res://Assets/Trees Back.png" id="2_62bij"]
+[ext_resource type="Texture2D" uid="uid://ty3a7xlsngnw" path="res://Assets/Trees Front.png" id="3_pumid"]
+[ext_resource type="Texture2D" uid="uid://dq7yient1t526" path="res://DANIEL_BERRY_Assignment_Two.png" id="4_tcpb3"]
+[ext_resource type="PackedScene" uid="uid://cmdwm7nsgjpvs" path="res://player.tscn" id="5_h6ij0"]
+[ext_resource type="PackedScene" uid="uid://bga6g8d8chijj" path="res://Interactables/spawnpoint.tscn" id="6_yr256"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tfa58"]
+texture = ExtResource("4_tcpb3")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/size_in_atlas = Vector2i(2, 2)
+8:0/0 = 0
+8:0/0/texture_origin = Vector2i(0, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -4, -8, -4)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/size_in_atlas = Vector2i(3, 2)
+5:2/0 = 0
+5:2/0/texture_origin = Vector2i(0, 8)
+8:2/0 = 0
+9:2/0 = 0
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:3/0 = 0
+9:3/0 = 0
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:4/size_in_atlas = Vector2i(2, 1)
+5:4/next_alternative_id = 2
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 16, 0, 6, 8, -6, 8)
+5:4/0/physics_layer_0/polygon_0/one_way = true
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -4, -4.5, -4)
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -4, -8, -4)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -4, -8, -4)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -4, -8, -4)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -4, -8, -4)
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_615mg"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_tfa58")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_02do3"]
+size = Vector2(18, 26)
+
+[sub_resource type="Animation" id="Animation_s15aa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Transition/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Transition/ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_shxgi"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Transition/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333334, 0.966667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Transition/ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.966667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_2fy0c"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Transition/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Transition/ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0333333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rymju"]
+_data = {
+"RESET": SubResource("Animation_s15aa"),
+"fade_in": SubResource("Animation_shxgi"),
+"fade_out": SubResource("Animation_2fy0c")
+}
+
+[node name="Level 0" type="Node2D"]
+script = ExtResource("1_jkq4l")
+
+[node name="Mountains" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.2, 0.2)
+repeat_size = Vector2(480, 0)
+
+[node name="Mountains" type="Sprite2D" parent="Mountains"]
+texture = ExtResource("1_tr7sb")
+centered = false
+
+[node name="Back Treees" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(480, 0)
+
+[node name="Trees Back" type="Sprite2D" parent="Back Treees"]
+texture = ExtResource("2_62bij")
+centered = false
+
+[node name="Front Trees" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.7, 0.7)
+repeat_size = Vector2(480, 0)
+
+[node name="Trees Front" type="Sprite2D" parent="Front Trees"]
+texture = ExtResource("3_pumid")
+centered = false
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAABAAAAABAAAAAAABABAAAAABAAAAAAACABAAAAABAAAAAAADABAAAAABAAAAAAAEABAAAAABAAAAAAAFABAAAAABAAAAAAAGABAAAAADAAAAAAAHABAAAAABAAAAAAAIABAAAAABAAAAAAAJABAAAAACAAAAAAAKABAAAAACAAAAAAALABAAAAABAAAAAAAMABAAAAADAAAAAAANABAAAAADAAAAAAAOABAAAAABAAAAAAAPABAAAAACAAAAAAAQABAAAAAGAAAAAAARABAAAAACAAEAAAASABAAAAACAAMAAAATABAAAAACAAEAAAAUABAAAAACAAEAAAAVABAAAAACAAEAAAAWABAAAAACAAEAAAAXABAAAAAHAAAAAAAYABAAAAACAAAAAAAZABAAAAACAAAAAAAaABAAAAABAAAAAAAbABAAAAABAAAAAAAcABAAAAACAAAAAAAdABAAAAACAAAAAAAeABAAAAADAAAAAAAfABAAAAACAAAAAAAgABAAAAACAAAAAAAhABAAAAAFAAAAAAD//xAAAAABAAAAAAASAA8AAAACAAEAAAASAAwAAAAAAAMAAAASAA4AAAACAAEAAAASAA0AAAAGAAAAAAASAAsAAAAAAAIAAAAXAA8AAAAFAAUAAAAXAA4AAAAEAAIAAAAXAA0AAAAEAAMAAAAXAAwAAAAEAAEAAAAXAAsAAAAEAAIAAAASAAoAAAAAAAEAAAAXAAoAAAACAAEAAAAVAAoAAAACAAEAAAATAAoAAAACAAEAAAAWAAoAAAACAAEAAAAUAAoAAAACAAEAAAAUAA0AAAACAAIAAAAUAAwAAAACAAIAAAAUAAsAAAACAAIAAAATAAsAAAACAAIAAAATAAwAAAACAAIAAAATAA0AAAACAAIAAAATAA4AAAACAAIAAAATAA8AAAACAAIAAAAUAA8AAAACAAIAAAAUAA4AAAACAAIAAAAVAA4AAAACAAIAAAAVAA0AAAACAAIAAAAVAAwAAAACAAIAAAAVAAsAAAACAAIAAAAWAAsAAAACAAIAAAAWAAwAAAACAAIAAAAWAA0AAAACAAIAAAAWAA4AAAACAAIAAAAWAA8AAAACAAIAAAAVAA8AAAACAAIAAAAaAA8AAAAIAAAAAAACAA8AAAAFAAIAAAAJAA8AAAAIAAIAAAAPAA8AAAAIAAIAAAAUAAkAAAACAAAAAAAEAA8AAAAIAAQAAAAWAAkAAAABAAAAAAATAAkAAAACAAAAAAAcAA8AAAAIAAMAAAAfAA8AAAAIAAMAAAAeAA8AAAAJAAIAAAALAA8AAAAJAAIAAAAAAA8AAAAJAAIAAAD//w8AAAABAAMAAAARAA0AAAAFAAAAAAARAA4AAAACAAEAAAAQAA4AAAAAAAMAAAAQAA0AAAAAAAAAAAAYAAoAAAACAAEAAAAZAAoAAAACAAEAAAAaAAoAAAACAAEAAAAbAAoAAAACAAEAAAAcAAoAAAAEAAEAAAAcAAsAAAAEAAUAAAAbAAsAAAADAAUAAAAaAAsAAAACAAUAAAAZAAsAAAABAAUAAAAYAAsAAAADAAUAAAAYAAkAAAACAAAAAAAaAAkAAAACAAAAAAAQAA8AAAAAAAMAAAARAA8AAAACAAEAAAASAAkAAAAAAAAAAAAVAAkAAAADAAAAAAAXAAkAAAADAAAAAAAZAAkAAAABAAAAAAAbAAkAAAABAAAAAAAcAAkAAAAEAAAAAAANAAoAAAAFAAQAAAAgAA8AAAAFAAIAAAAVAAgAAAAIAAQAAAAdAA8AAAAIAAQAABAiAA8AAAAAAAIAAAAiAA4AAAAAAAMAAAAiAA0AAAAAAAMAAAAiAAwAAAAAAAEAAAAiAAsAAAAAAAMAAAAiAAoAAAAAAAMAAAAiAAkAAAAAAAEAAAAiABAAAAAGAAAAAAAiAAgAAAAAAAEAAAAiAAcAAAAAAAEAAAAiAAYAAAAAAAAAAAAjAAYAAAACAAAAAAAkAAYAAAADAAAAAAAjAAcAAAACAAIAAAAjAAgAAAACAAIAAAAjAAkAAAACAAIAAAAjAAoAAAACAAIAAAAjAAsAAAACAAIAAAAjAAwAAAACAAIAAAAjAA0AAAACAAIAAAAjAA4AAAACAAIAAAAjAA8AAAACAAIAAAAjABAAAAACAAIAAAAkAAcAAAACAAIAAAAkAAgAAAACAAIAAAAkAAkAAAACAAIAAAAkAAoAAAACAAIAAAAkAAsAAAACAAIAAAAkAAwAAAACAAIAAAAkAA0AAAACAAIAAAAkAA4AAAACAAIAAAAkAA8AAAACAAIAAAAkABAAAAACAAIAAAAlAAYAAAABAAAAAAAlAAcAAAACAAEAAAAlAAgAAAACAAEAAAAlAAkAAAACAAEAAAAlAAoAAAACAAEAAAAlAAsAAAACAAEAAAAlAAwAAAACAAEAAAAlAA0AAAACAAEAAAAlAA4AAAACAAEAAAAlAA8AAAACAAEAAAAlABAAAAACAAEAAAD//w4AAAABAAMAAAD//w0AAAABAAMAAAD//wwAAAABAAMAAAD//wsAAAABAAMAAAD//woAAAABAAMAAAD//wkAAAABAAMAAAD//wgAAAABAAMAAAD//wcAAAABAAMAAAD//wYAAAABAAMAAAD//wUAAAABAAMAAAD//wQAAAABAAMAAAD//wMAAAABAAMAAAD//wIAAAABAAMAAAD//wEAAAABAAMAAAD//wAAAAABAAMAAAA=")
+tile_set = SubResource("TileSet_615mg")
+
+[node name="Spawnpoint" parent="." instance=ExtResource("6_yr256")]
+position = Vector2(8, 256)
+
+[node name="Player" parent="." instance=ExtResource("5_h6ij0")]
+position = Vector2(8, 256)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-8, -240)
+limit_left = 0
+limit_top = 0
+limit_right = 600
+
+[node name="SceneTransition" type="Area2D" parent="."]
+position = Vector2(424, 243)
+monitorable = false
+
+[node name="Portal" type="CollisionShape2D" parent="SceneTransition"]
+shape = SubResource("RectangleShape2D_02do3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Transition" type="AnimationPlayer" parent="CanvasLayer"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_rymju")
+}
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Transition"]
+visible = false
+offset_left = -8.0
+offset_top = -12.0
+offset_right = 495.0
+offset_bottom = 285.0
+color = Color(0, 0, 0, 1)
+
+[connection signal="area_entered" from="SceneTransition" to="." method="_on_scene_transition_area_entered"]
+[connection signal="animation_finished" from="CanvasLayer/Transition" to="." method="_on_transition_animation_finished"]

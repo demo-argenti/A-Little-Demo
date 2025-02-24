@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://bce4q6t5qfrg8"]
+
+[ext_resource type="Script" path="res://Scripts/hedgehog.gd" id="1_x8e7v"]
+[ext_resource type="Texture2D" uid="uid://c3uvq7tme37o3" path="res://Assets/Hedgehog.png" id="2_54fwp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6udkj"]
+atlas = ExtResource("2_54fwp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3upvi"]
+atlas = ExtResource("2_54fwp")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wcvw7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6udkj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3upvi")
+}],
+"loop": true,
+"name": &"run",
+"speed": 9.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_btyxd"]
+radius = 4.0
+height = 28.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_shu2g"]
+radius = 9.0
+height = 34.0
+
+[node name="Hedgehog" type="CharacterBody2D"]
+script = ExtResource("1_x8e7v")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_wcvw7")
+animation = &"run"
+frame_progress = 0.204451
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_btyxd")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(-16, -4)
+target_position = Vector2(0, 15)
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -9)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_shu2g")
+
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
