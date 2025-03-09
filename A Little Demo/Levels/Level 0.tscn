@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=4 uid="uid://clistbmirlqoe"]
 
-[ext_resource type="Script" path="res://Scripts/level_0.gd" id="1_jkq4l"]
+[ext_resource type="Script" uid="uid://c1rrtecpjgdp3" path="res://Scripts/level_0.gd" id="1_jkq4l"]
 [ext_resource type="Texture2D" uid="uid://va28ax843ipv" path="res://Assets/Mountains.png" id="1_tr7sb"]
 [ext_resource type="Texture2D" uid="uid://c0unc0jk5eyyq" path="res://Assets/Trees Back.png" id="2_62bij"]
 [ext_resource type="Texture2D" uid="uid://ty3a7xlsngnw" path="res://Assets/Trees Front.png" id="3_pumid"]
-[ext_resource type="Texture2D" uid="uid://dq7yient1t526" path="res://DANIEL_BERRY_Assignment_Two.png" id="4_tcpb3"]
+[ext_resource type="Texture2D" uid="uid://dq7yient1t526" path="res://Tileset.png" id="4_tcpb3"]
 [ext_resource type="PackedScene" uid="uid://cmdwm7nsgjpvs" path="res://player.tscn" id="5_h6ij0"]
 [ext_resource type="PackedScene" uid="uid://bga6g8d8chijj" path="res://Interactables/spawnpoint.tscn" id="6_yr256"]
 
@@ -196,9 +196,9 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rymju"]
 _data = {
-"RESET": SubResource("Animation_s15aa"),
-"fade_in": SubResource("Animation_shxgi"),
-"fade_out": SubResource("Animation_2fy0c")
+&"RESET": SubResource("Animation_s15aa"),
+&"fade_in": SubResource("Animation_shxgi"),
+&"fade_out": SubResource("Animation_2fy0c")
 }
 
 [node name="Level 0" type="Node2D"]
@@ -256,7 +256,7 @@ shape = SubResource("RectangleShape2D_02do3")
 [node name="Transition" type="AnimationPlayer" parent="CanvasLayer"]
 root_node = NodePath("../..")
 libraries = {
-"": SubResource("AnimationLibrary_rymju")
+&"": SubResource("AnimationLibrary_rymju")
 }
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Transition"]

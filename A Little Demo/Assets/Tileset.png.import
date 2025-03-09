@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq7yient1t526"
-path="res://.godot/imported/DANIEL_BERRY_Assignment_Two.png-496c6e7fcf1a5951a85046bb2f18201d.ctex"
+path="res://.godot/imported/Tileset.png-17cb559e4b2564b835d39be4154d710f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/DANIEL_BERRY_Assignment_Two.png"
-dest_files=["res://.godot/imported/DANIEL_BERRY_Assignment_Two.png-496c6e7fcf1a5951a85046bb2f18201d.ctex"]
+source_file="res://Assets/Tileset.png"
+dest_files=["res://.godot/imported/Tileset.png-17cb559e4b2564b835d39be4154d710f.ctex"]
 
 [params]
 

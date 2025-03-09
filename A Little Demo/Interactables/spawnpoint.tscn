@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bga6g8d8chijj"]
 
-[ext_resource type="Script" path="res://Scripts/spawnpoint.gd" id="1_cwx3x"]
+[ext_resource type="Script" uid="uid://6e1wany4di4d" path="res://Scripts/spawnpoint.gd" id="1_cwx3x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aj3me"]
 

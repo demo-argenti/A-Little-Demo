@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq8edy8nmi26g"
-path="res://.godot/imported/DANIEL_BERRY_Assignment_One.png-67ca210b2600618a17aebf62c8acdb32.ctex"
+path="res://.godot/imported/Strudel.png-cb7c2ce17df4a354b6fc41d8793dd82b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DANIEL_BERRY_Assignment_One.png"
-dest_files=["res://.godot/imported/DANIEL_BERRY_Assignment_One.png-67ca210b2600618a17aebf62c8acdb32.ctex"]
+source_file="res://Assets/Strudel.png"
+dest_files=["res://.godot/imported/Strudel.png-cb7c2ce17df4a354b6fc41d8793dd82b.ctex"]
 
 [params]
 

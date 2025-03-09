@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq8edy8nmi26g"
-path="res://.godot/imported/DANIEL_BERRY_Assignment_One.png-ea3f782397434e962194c8e86f97eeb8.ctex"
+uid="uid://dq7yient1t526"
+path="res://.godot/imported/Tileset.png-8b57c3b721721080420dc0358d85e828.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/DANIEL_BERRY_Assignment_One.png"
-dest_files=["res://.godot/imported/DANIEL_BERRY_Assignment_One.png-ea3f782397434e962194c8e86f97eeb8.ctex"]
+source_file="res://Tileset.png"
+dest_files=["res://.godot/imported/Tileset.png-8b57c3b721721080420dc0358d85e828.ctex"]
 
 [params]
 

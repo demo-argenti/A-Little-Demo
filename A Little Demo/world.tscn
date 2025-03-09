@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=4 uid="uid://clistbmirlqoe"]
 
-[ext_resource type="Texture2D" uid="uid://dq7yient1t526" path="res://DANIEL_BERRY_Assignment_Two.png" id="1_0omo5"]
+[ext_resource type="Texture2D" uid="uid://dq7yient1t526" path="res://Tileset.png" id="1_0omo5"]
 [ext_resource type="PackedScene" uid="uid://cmdwm7nsgjpvs" path="res://player.tscn" id="2_bix81"]
-[ext_resource type="Script" path="res://player.gd" id="3_3pjwd"]
+[ext_resource type="Script" uid="uid://caeh0pwjmj18o" path="res://player.gd" id="3_3pjwd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tfa58"]
 texture = ExtResource("1_0omo5")

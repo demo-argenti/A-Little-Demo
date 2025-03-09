@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=4 uid="uid://cxs3hi76klwtk"]
 
 [ext_resource type="Texture2D" uid="uid://va28ax843ipv" path="res://Assets/Mountains.png" id="1_a4p17"]
-[ext_resource type="Script" path="res://Levels/main_menu.gd" id="1_k1ns3"]
+[ext_resource type="Script" uid="uid://bremhisxqrdml" path="res://Levels/main_menu.gd" id="1_k1ns3"]
 [ext_resource type="Texture2D" uid="uid://c0unc0jk5eyyq" path="res://Assets/Trees Back.png" id="2_knc8h"]
 [ext_resource type="Texture2D" uid="uid://ty3a7xlsngnw" path="res://Assets/Trees Front.png" id="3_hw33t"]
-[ext_resource type="Texture2D" uid="uid://dq7yient1t526" path="res://DANIEL_BERRY_Assignment_Two.png" id="4_7itpi"]
+[ext_resource type="Texture2D" uid="uid://dq7yient1t526" path="res://Tileset.png" id="4_7itpi"]
 [ext_resource type="FontFile" uid="uid://cbdwh1ogco360" path="res://Assets/Inkbit.ttf" id="5_3jea6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uuify"]
@@ -125,6 +125,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = -480.0
 offset_bottom = -270.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_k1ns3")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
